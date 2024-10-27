@@ -1,0 +1,106 @@
+body {
+    color: white;
+    background: black;
+    margin: 0;
+    font-family: "Chakra Petch", sans-serif;
+    margin-bottom: 100px;
+}
+
+/* Header estilizado */
+header {
+    border-bottom: solid 2px rgb(42, 122, 228);
+    padding: 20px;
+    font-size: 32px;
+    color: rgb(42, 122, 228);
+    text-align: center;
+}
+
+.header-container h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+.header-container h3 {
+    font-size: 1.2em;
+    color: #ff4500;
+}
+
+/* Seção chamada - alinhamento */
+.chamada {
+    background: rgb(184, 156, 213);
+    padding: 80px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.chamada-texto {
+    margin-right: 5%;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+p {
+    font-size: 20px;
+}
+
+/* Seção de categorias de vídeos */
+.categoria {
+    padding: 0 20px;
+    margin-top: 50px;
+}
+
+.categoria h2 {
+    color: rgb(42, 122, 228);
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.categoria-videos {
+    display: flex;
+    overflow-x: auto;
+    gap: 10px;
+    padding-bottom: 20px;
+}
+
+.categoria-videos a {
+    position: relative;
+    display: inline-block;
+}
+
+.categoria-videos img {
+    opacity: 0.7;
+    height: 200px;
+    width: auto;
+    border-radius: 8px;
+    transition: opacity 0.3s, transform 0.3s;
+}
+
+.categoria-videos img:hover {
+    opacity: 1.0;
+    transform: scale(1.05);
+    border: 3px solid #2a7ae4;
+}
+
+/* Botão assistir sobreposto na imagem */
+.categoria-videos button {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #ffffff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.categoria-videos button:hover {
+    background-color: #ff4500;
+}
